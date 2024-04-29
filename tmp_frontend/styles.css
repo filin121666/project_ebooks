@@ -1,0 +1,11 @@
+.symbol {
+    width: 5vw; 
+    height: 5vw; 
+    /* object-fit: cover; 
+    object-position: bottom; */
+}
+
+header {
+    width: 100vw;
+    height: 5vw;
+}
