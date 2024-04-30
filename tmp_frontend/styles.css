@@ -1,11 +1,40 @@
 .symbol {
-    width: 5vw; 
-    height: 5vw; 
-    /* object-fit: cover; 
-    object-position: bottom; */
+    width: 5vw;
+    height: 5vw;
+    float: left;
 }
 
 header {
     width: 100vw;
     height: 5vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+.nav_bar {
+    display: block;
+    height: 5vw;
+    color: white;
+    text-align: center;
+    padding: 0px 16px;
+    text-decoration: none;
+    line-height: 5vw;
+}
+
+li a:hover {
+    background-color: #111;
 }
