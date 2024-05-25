@@ -1,5 +1,5 @@
 """
-ASGI config for netlibrary project.
+ASGI config for django_netlibrary project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'netlibrary.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'django_netlibrary.settings')
 
 application = get_asgi_application()
