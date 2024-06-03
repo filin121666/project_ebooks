@@ -17,10 +17,8 @@
         </div>
         <nav>
             <div class="dropdown">
-                <button class="dropbtn">
-                    <img src="{% static 'netlibrary/img/menu_nav_icon.png' %}" alt="Меню">
-                </button>
-                <div class="dropdown-content" id="myDropdown">
+                <input class="dropbtn" onclick="showNavMenu()" type="image" src="{% static 'netlibrary/img/menu_nav_icon.png' %}" />
+                <div class="dropdown-content" id="dropdownMenu">
                     <a href="{% url 'netlibrary:home' %}">Главная</a>
                 </div>
             </div>
