@@ -1,4 +1,30 @@
-{% extends "netlibrary/base.html" %}
-
-{% block content %}
-{% endblock content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{% static 'netlibrary/js/nav_menu.js' %}"></script>
+    <link rel="shortcut icon" href="{% static 'netlibrary/img/netlibrary.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'netlibrary/css/styles_home.css' %}">
+    <title>NETlibrary</title>
+</head>
+<body>
+    <header>
+        <div class="header_block">
+            <img class="symbol" src="{% static 'netlibrary/img/netlibrary.png' %}" alt="Ebook">
+            <h2 class="name_site_header">NETlibrary</h2>
+        </div>
+        <nav>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    <img src="{% static 'netlibrary/img/menu_nav_icon.png' %}" alt="Меню">
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="{% url 'netlibrary:home' %}">Главная</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+</body>
+</html>

@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'netlibrary.apps.NetlibraryConfig',
-    # 'django_jinja',
 ]
 
 MIDDLEWARE = [
@@ -60,16 +59,6 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'django_netlibrary.urls'
 
 TEMPLATES = [
-    #jinja2
-    # {
-    #     'BACKEND': 'django_jinja.backend.Jinja2',
-    #     'APP_DIRS': True,
-    #     'OPTIONS': {
-    #         'environment': 'django_netlibrary.jinja2.environment',
-    #     },
-    # },
-
-    # django templates
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
@@ -134,6 +123,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / MEDIA_URL
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
