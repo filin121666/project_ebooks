@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'netlibrary.apps.NetlibraryConfig',
+    'auth_register.apps.AuthRegisterConfig',
 ]
 
 MIDDLEWARE = [
